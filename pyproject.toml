@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "test-teleflask"
+version = "0.1.0"
+description = ""
+authors = ["Oleksandr Kondratiuk <alex_kondr@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "test_teleflask"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+teleflask = "^1.0.1"
+flask = "^2.3.1"
+libmagic = "^1.0"
+python-magic-bin = "0.4.14"
+setuptools = "59.8.0"
+pydantic = {extras = ["dotenv"], version = "^1.10.7"}
+telebot = "^0.0.5"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
